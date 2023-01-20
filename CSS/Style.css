@@ -1608,11 +1608,6 @@ video {
   border-style: none;
 }
 
-.bg-slate-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
-}
-
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -2182,6 +2177,14 @@ video {
   content: var(--tw-content);
 }
 
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(to right top , #65dfc9 , #6cdbeb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -2251,3 +2254,4 @@ video {
     }
   }
 }
+

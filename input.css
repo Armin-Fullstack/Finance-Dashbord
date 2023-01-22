@@ -28,3 +28,8 @@ body {
     bottom: 5%;
     left:10%
 }
+
+
+.menu {
+   @apply flex justify-between items-start pl-3
+}

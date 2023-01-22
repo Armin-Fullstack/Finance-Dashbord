@@ -10,6 +10,14 @@ body {
     align-items: center;
 }
 
+.glass {
+    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+}
+
+
 .circle1 , .circle2 {
     background-image: linear-gradient(to right bottom ,
      rgba(255,255,255,0.8) , rgba(255,255,255,0.3));
@@ -26,10 +34,16 @@ body {
 
 .circle2 {
     bottom: 5%;
-    left:10%
+    left:10%;
+    
 }
 
 
 .menu {
    @apply flex justify-between items-start pl-3
+}
+
+.left-side {
+    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.15));
+    border-radius: 2rem;
 }

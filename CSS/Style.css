@@ -629,6 +629,14 @@ video {
   right: 1px;
 }
 
+.top-0 {
+  top: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -2576,6 +2584,10 @@ body {
   border-radius: 2rem;
 }
 
+circle {
+  stroke: url(#GradientColor);
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -2645,5 +2657,4 @@ body {
     }
   }
 }
-
 

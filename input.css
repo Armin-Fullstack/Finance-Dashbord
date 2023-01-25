@@ -49,3 +49,7 @@ body {
 }
 
 
+ circle {
+     stroke: url(#GradientColor);
+}
+

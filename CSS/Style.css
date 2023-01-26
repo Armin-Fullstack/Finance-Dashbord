@@ -1980,14 +1980,14 @@ video {
   padding-right: 2rem;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .px-4 {
@@ -2584,18 +2584,33 @@ body {
   border-radius: 2rem;
 }
 
-circle {
+#circle1 {
   stroke: url(#GradientColor);
   stroke-dasharray: 450;
   stroke-dashoffset: 450;
   transform: rotate(-90deg);
   transform-origin: center;
-  animation: anim 2s linear forwards;
+  animation: anim1 2s linear forwards;
 }
 
-@keyframes anim {
+#circle2 {
+  stroke: url(#GradientColor);
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  animation: anim2 2s linear forwards;
+}
+
+@keyframes anim1 {
   100% {
     stroke-dashoffset: 157.5;
+  }
+}
+
+@keyframes anim2 {
+  100% {
+    stroke-dashoffset: 234;
   }
 }
 

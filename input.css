@@ -49,17 +49,32 @@ body {
 }
 
 
- circle {
+ #circle1 {
      stroke: url(#GradientColor);
      stroke-dasharray: 450;
      stroke-dashoffset: 450;
      transform: rotate(-90deg);
      transform-origin: center;
-    animation: anim 2s linear forwards;
+    animation: anim1 2s linear forwards;
 }
 
-@keyframes anim {
+#circle2 {
+    stroke: url(#GradientColor);
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    transform: rotate(-90deg);
+    transform-origin: center;
+   animation: anim2 2s linear forwards;
+}
+
+@keyframes anim1 {
     100% {
      stroke-dashoffset: 157.5;
+    }
+}
+
+@keyframes anim2 {
+    100% {
+     stroke-dashoffset: 234;
     }
 }

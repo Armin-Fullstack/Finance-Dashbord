@@ -2586,6 +2586,15 @@ body {
 
 circle {
   stroke: url(#GradientColor);
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  animation: anim 5s linear forwards;
+}
+
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 157.5;
+  }
 }
 
 .hover\:font-bold:hover {
@@ -2657,4 +2666,3 @@ circle {
     }
   }
 }
-

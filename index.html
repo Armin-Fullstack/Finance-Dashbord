@@ -92,7 +92,7 @@
 
      </div>
 
-    <div class="lg:col-span-9 py-5 px-5 ">
+    <div class="lg:col-span-9 col-span-1 py-5 px-5 ">
         <!-- Navbar -->
         <div class="hidden lg:flex justify-between items-center">
             <!-- Search -->
@@ -110,8 +110,16 @@
             </div>
         </div>
 
+        <!-- Hamburger Button -->
+        <button id="menu-btn" class="hamburger lg:hidden focus:outline-none  block ml-auto mt-3">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+        </button>
+
+
             <!-- Boxes -->
-        <div class="mt-10 grid lg:grid-cols-2 gap-4">
+        <div class="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-4">
             
                 <div class="bg-blue-600 opacity-80 py-5 pl-6 text-white flex flex-col rounded-lg space-y-2">
                     <h2 class="text-sm opacity-90 text-bold">Total Income</h2>

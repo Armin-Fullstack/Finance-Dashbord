@@ -13,14 +13,15 @@
 </head>
 <body>
     <!-- Circles -->
-    <div class="circle1"></div>
-    <div class="circle2"></div>
+    <!-- <div class="circle1"></div>
+    <div class="circle2"></div> -->
 
-    <div class="contaienr mx-auto px-8">
 
- <!-- Grid container -->
- <div class="grid grid-cols-12  glass">
-    <div class="col-span-3 pl-2 pr-4 pt-5 left-side">
+
+     <!-- Grid container -->
+ <div class="grid grid-cols-1 lg:grid-cols-12 glass mx-4 my-7">
+
+    <div class="hidden lg:block lg:col-span-3 pl-2 pr-4 pt-5 left-side">
         <!-- Profile image & name -->
         <div class="flex flex-col justify-center items-center space-y-2">
             <img class="w-[4rem] rounded-full ring-4 ring-blue-500" src="Images/image-daniel.jpg" alt="Daniel">
@@ -28,7 +29,7 @@
         </div>
 
         <!-- Menu -->
-        <div class="mt-8 space-y-5">
+        <div class=" mt-8 space-y-5">
             <ul class="menu">
                 <div class="flex items-start space-x-5">
                         <img src="Images/home-2-svgrepo-com.svg" alt="" class="w-7">
@@ -96,9 +97,9 @@
 
      </div>
 
-    <div class="col-span-9 py-5 px-5 ">
+    <div class="lg:col-span-9 py-5 px-5 ">
         <!-- Navbar -->
-        <div class="flex justify-between items-center">
+        <div class="hidden lg:flex justify-between items-center">
             <!-- Search -->
             <div class="search-bar border-2 border-slate-400 w-[360px] rounded-full flex items-center justify-between p-1">
                 <input type="text" placeholder="Search" class="w-full bg-transparent outline-none pl-2 h-full text-gray-600">
@@ -115,7 +116,7 @@
         </div>
 
             <!-- Boxes -->
-        <div class="grid grid-cols-2 mt-10 gap-4">
+        <div class="mt-10 grid lg:grid-cols-2 gap-4">
             
                 <div class="bg-blue-600 opacity-80 py-5 pl-6 text-white flex flex-col rounded-lg space-y-2">
                     <h2 class="text-sm opacity-90 text-bold">Total Income</h2>
@@ -144,22 +145,23 @@
         </div>
 
         <!-- Report -->
-        <div class="grid grid-cols-12 mt-4 gap-4">
-            <div class="col-span-6">
-                <div class="bg-slate-300 rounded-lg flex flex-col justify-between p-4">
-                    <div class="flex justify-between space-y-2 mb-5">
+        <div class="grid grid-cols-1 lg:grid-cols-12 mt-4 gap-4">
+            <div class="lg:col-span-6">
+                <div class="bg-slate-300 rounded-lg flex flex-col h-full justify-around p-4 mb-2">
+
+                    <div class="flex flex-col sm:flex-row justify-between space-y-2 mb-5">
                         <div class="flex flex-col space-y-1">
                             <p class="text-bold text-sm max-w-md">AP and AR Balance</p>
                             <p class="text-sm text-slate-400 opacity-80">Avg. $5.309</p>
                         </div>
 
-                        <div class="flex space-x-1">
-                            <button class="flex space-x-1 items-center justify-center border border-slate-400 rounded-lg px-4">
-                                <span class="text-sm text-gray-500">Monthly</span>
+                        <div class="flex justify-between sm:space-x-4">
+                            <button class="flex md:space-x-1 items-center justify-center border border-slate-400 rounded-lg py-2 px-2 lg:py-0">
+                                <span class="text-sm lg:text-xs text-gray-500">Monthly</span>
                                 <img src="Images/EpBottom.svg" alt="" class="w-4">
                             </button>
-                            <button class="flex space-x-1 items-center justify-center border border-slate-400 rounded-lg px-4">
-                                <span class="text-sm text-gray-500">Last Year</span>
+                            <button class="flex md:space-x-1 items-center justify-center border border-slate-400 rounded-lg py-2 px-2 lg:py-0">
+                                <span class="text-sm lg:text-xs text-gray-500">Last Year</span>
                                 <img src="Images/EpBottom.svg" alt="" class="w-4">
                             </button>
                         </div>
@@ -175,9 +177,9 @@
             </div>
 
 
-            <div class="col-span-6">
+            <div class="lg:col-span-6">
                 <!-- Budget -->
-                <div class="grid grid-cols-2 gap-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-2">
                     <div class="bg-slate-300 p-4 rounded-lg text-center">
                         <h2 class="text-left text-sm font-bold">% of Income Budget</h2>
                         <!-- Progress bar 1 -->
@@ -222,6 +224,7 @@
 
                         <a href="#" class="block text-center text-sm text-blue-600">View Full Report</a>
                     </div>
+
                      <div class="bg-slate-300 p-4 rounded-lg text-center">
                         <h2 class="text-left text-sm font-bold">% of Income Budget</h2>
                         <!-- Progress bar 2 -->
@@ -275,8 +278,6 @@
 
 </div>
 
-    </div>
-
-   
+    
 </body>
 </html>

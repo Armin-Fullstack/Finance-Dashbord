@@ -1,5 +1,7 @@
 const number1 = document.querySelector(".number1")
 const number2 = document.querySelector(".number2")
+const menuBtn = document.getElementById("menu-btn")
+const menuMobile = document.getElementById("menu-mobile")
 
 let counter1 = 0;
 
@@ -24,3 +26,11 @@ setInterval(() => {
 
 } , 35)
 
+
+const showMenu = () => {
+    menuBtn.classList.toggle("open")
+    menuMobile.classList.toggle("block")
+    menuMobile.classList.toggle("hidden")
+}
+
+menuBtn.addEventListener("click" , showMenu)

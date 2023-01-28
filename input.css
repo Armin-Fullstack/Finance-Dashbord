@@ -22,6 +22,10 @@ body {
    @apply flex justify-between items-start pl-3
 }
 
+#menu-mobile {
+    transition: all 0.5s;
+}
+
 .left-side {
     background-image: linear-gradient(to right bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.15));
     border-radius: 2rem;
@@ -106,3 +110,8 @@ body {
 }
 
 
+@media only screen and  (max-width: 452px) {
+    #search-mobile {
+        display: none
+    }
+}

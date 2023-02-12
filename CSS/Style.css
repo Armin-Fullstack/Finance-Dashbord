@@ -2652,12 +2652,11 @@ body {
 .hamburger-top,
 .hamburger-middle,
 .hamburger-bottom {
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 24px;
-  height: 3px;
+  height: 2px;
   background-color: black;
   transform: rotate(0);
   transition: all 0.5s;
@@ -2673,7 +2672,6 @@ body {
 
 .open {
   transform: rotate(90deg);
-  transform: translateY(0);
 }
 
 .open .hamburger-middle {
